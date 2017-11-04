@@ -21,7 +21,6 @@ const monologueLines = [
   'I am the one who knocks!'
 ];
 
-var wordCountMap = monologueLines.reduce(function(accumulator, amount){
-  return accumulator.push({amount})
-})
-
+var wordCountMap = monologueLines.reduce(function(accumulator, amount, index, collection){
+  return {collection[index]: accumulator+amount}
+}, 0)
