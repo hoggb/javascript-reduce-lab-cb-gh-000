@@ -22,6 +22,6 @@ const monologueLines = [
 ];
 
 var wordCountMap = monologueLines.reduce(function(accumulator, amount, index, collection){
-  accumulator[amount.split(" ").length.toString()] = amount;
+  accumulator[amount.split(" ").length.toString()] = index;
   return accumulator;
 }, {})
