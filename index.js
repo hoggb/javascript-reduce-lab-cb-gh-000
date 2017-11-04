@@ -20,3 +20,8 @@ const monologueLines = [
   'No.',
   'I am the one who knocks!'
 ];
+
+var wordCountMap = monologueLines.reduce(function(accumulator, amount){
+  return accumulator.push({amount})
+})
+
